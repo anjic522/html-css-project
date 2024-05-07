@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/regular.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v5-font-face.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v4-shims.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/svg-with-js.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v4-font-face.min.css" />
+
+    <style>
+        * {
+            text-decoration: none;
+        }
+
+        body {
+
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .background1 {
+            background-image: url("images/infinite-loop-01.jpg");
+            background-size: cover;
+            height: 600px;
+            width: 100%;
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+
+        }
+
+        .navbar {
+            height: 50px;
+            width: 100%;
+            color: white;
+            background-color: black;
+            position: fixed;
+            z-index: 1;
+
+        }
+
+        .navleft {
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            display: inline-block;
+            float: left;
+            margin: 10px;
+        }
+
+        .navright {
+            float: right;
+            color: white;
+
+
+        }
+
+        .navright a {
+            text-decoration: none;
+            display: inline-block;
+            color: white;
+            margin: 10px 20px;
+
+
+        }
+
+        .background1 span {
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .background1 p {
+            font-size: 20px;
+            color: white;
+
+        }
+
+        .arrow {
+            background-color: steelblue;
+            color: white;
+            align-content: center;
+            width: 7rem;
+            height: 5rem;
+            margin: 20px;
+            font-size: 3rem;
+        }
+
+        .imgend {
+            margin-top: 100px;
+        }
+
+        .background2 {
+            height: 900px;
+            width: 100%;
+
+
+        }
+
+        .background2 h1 {
+            color: steelblue;
+            margin: 0;
+            padding-left: 50px;
+            padding-right: 20px;
+        }
+
+        .background2 p {
+            text-align: justify;
+            padding-left: 50px;
+            padding-right: 20px;
+        }
+
+        .background2 span {
+            color: steelblue;
+
+        }
+
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            text-align: center;
+            height: auto;
+        }
+
+        .flex-container2 {
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            text-align: center;
+            height: auto;
+        }
+
+        .flex-item-left {
+            padding: 10px;
+            flex: 50%;
+
+        }
+
+        .flex-item-left h2 {
+            color: steelblue;
+
+        }
+        .flex-item-left p{
+            font-size: 20px;
+        }
+        .flex-item-right h2 {
+            color: steelblue;
+
+        }
+        .flex-item-right p{
+            font-size: 20px;
+        }
+
+
+
+        .flex-item-right {
+            padding: 10px;
+            flex: 50%;
+
+        }
+
+        .flex-item-right h2 {
+            color: steelblue;
+
+        }
+
+        .flex-container span {
+            line-height: 1.5;
+            font-size: 25px;
+            color: steelblue;
+        }
+
+        .icon {
+            width: 20px;
+            height: 100px;
+        }
+
+
+        .background3 {
+            background-image: url("images/[FREE\ -\ HDconvert.com]\ infinite-loop-02.jpg");
+            height: 800px;
+            width: 100%;
+            background-size: cover;
+        }
+
+
+
+        .background3 h2 {
+            margin: 0px;
+            font-size: 50px;
+            color: white;
+
+        }
+
+        .background3 p {
+            margin: 20px;
+            color: white;
+            font-size: 15px;
+        }
+
+
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            align-items: center;
+            justify-items: center;
+
+
+        }
+
+        .card {
+            width: 300px;
+            background-color: transparent;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 0px 10px 10px 10px;
+            padding: 30px;
+
+        }
+
+        .card img {
+            width: 80%;
+            height: 200px;
+            border-radius: 100%;
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .card-container p {
+            color: white;
+            font-size: 20px;
+            line-height: 1.5;
+            text-align: justify;
+            justify-content: center;
+
+        }
+
+        .card-container p i {
+            float: left;
+            font-size: 20px;
+        }
+
+        .background3 button {
+
+            border-radius: 100%;
+            width: 20px;
+            height: 20px;
+
+            margin: 20px;
+        }
+
+        .background4 {
+            width: 100%;
+            height: 750px;
+            background-color: white;
+            color: black;
+        }
+
+        .gallery {
+            font-size: 40px;
+            color: steelblue;
+            padding-top: 50px;
+        }
+
+        .para {
+            justify-content: center;
+            text-align: center;
+            font-size: 20px;
+            line-height: 1.5;
+
+        }
+
+        .flex-container4 {
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            width: 100%;
+            text-align: center;
+            height: 400px;
+        }
+
+        .flex-container4>div {
+            width: 100%;
+            height: 350px;
+            align-items: center;
+            justify-items: center;
+            margin: 10px;
+
+
+        }
+
+        .flex-container4 img {
+            width: 90%;
+            height: 350px;
+        }
+
+        .background4 button {
+
+            border-radius: 100%;
+            width: 20px;
+            height: 20px;
+
+            margin: 20px;
+        }
+
+        .background5 {
+            background-image: url("images/infinite-loop-03.jpg");
+            background-size: cover;
+            height: 900px;
+            width: 100%;
+        }
+
+        .flex-container5 {
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            text-align: center;
+            height: 500px;
+        }
+
+        .flexleft {
+            height: 250px;
+            width: 45%;
+
+            margin: 50px;
+
+        }
+
+        .flexright {
+            height: 300px;
+            width: 45%;
+
+            margin: 50px;
+        }
+
+        .flexleft input {
+            height: 30px;
+            margin: 10px;
+            width: 70%;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .message input {
+            height: 150px;
+            width: 70%;
+            border: 1px solid white;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .flexleft button {
+            height: 50px;
+            width: 250px;
+            background-color: steelblue;
+            color: white;
+            font-size: 25px;
+
+        }
+
+        footer {
+            color: white;
+            font-size: 20px;
+        }
+
+        .flex-item-left button {
+            height: 50px;
+            width: 150px;
+            background-color: steelblue;
+            color: white;
+            font-size: 20px;
+        }
+
+        .flex-item-right button {
+            height: 50px;
+            width: 150px;
+            background-color: steelblue;
+            color: white;
+            font-size: 20px;
+        }
+
+
+        .icons {
+            width: 20%;
+            height: 20%;
+            color: white;
+            background-color: red;
+            margin: 10px;
+            text-align: start;
+
+        }
+
+        .iconpara {
+            width: 20%;
+            height: 20%;
+            background-color: black;
+            color: white;
+        }
+
+        .taggi {
+            font-size: 2rem;
+            color: white;
+            padding-left: 4rem;
+            padding-top: 2rem;
+            line-height: 1rem;
+        }
+
+        .contactparenttwo span {
+            color: white;
+            font-size: 1.5rem;
+            font-family: arial;
+            padding-left: 1rem;
+
+        }
+
+        .baggi {
+            font-size: 2rem;
+            color: white;
+            padding-left: 4rem;
+            padding-top: 3rem;
+            line-height: 1rem;
+        }
+
+        .laggi {
+            font-size: 2rem;
+            color: white;
+            padding-left: 4rem;
+            padding-top: 4rem;
+            line-height: 1rem;
+        }
+
+        .phoggi {
+            font-size: 2rem;
+            color: white;
+            padding-left: 3.6rem;
+            padding-top: 3.6rem;
+            line-height: 1rem;
+
+        }
+
+        .phoggi span {
+            font-size: 1.5rem;
+        }
+
+        .laggi span {
+            font-size: 1.5rem;
+        }
+        .background6{
+            background-image: url("images/infinite-loop-03.jpg");
+                background-size: cover;
+                height: 50px;
+                width: 100%;
+        }
+        .background6 p{
+            margin: 0px;
+            height: 50px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media only screen and (max-width:500px) {
+            .navright {
+                display: none;
+
+            }
+
+            .background6{
+            background-image: url("images/infinite-loop-03.jpg");
+                background-size: cover;
+                height: 50px;
+                width: 100%;
+        }
+
+            .flex-container {
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+            .flex-container2 {
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+            .flex-container4 {
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+            .background2 {
+                height: 2100px;
+                width: 100%;
+            }
+
+            .card-container {
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: auto;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                margin-top: 30px;
+            }
+
+            .card {
+                align-items: center;
+            }
+
+            .background3 {
+                height: 1800px;
+            }
+
+            .flex-container4 {
+                flex-wrap: wrap;
+                flex-direction: column;
+                height: 1850px;
+                width: 100%;
+            }
+
+            .background5 {
+                background-image: url("images/infinite-loop-03.jpg");
+                background-size: cover;
+                height: 1100px;
+                width: 100%;
+            }
+
+            .background5 input {
+                width: 90%;
+                height: 20px;
+            }
+
+            .flex-container5 {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .background4 {
+                width: 100%;
+                height: 2250px;
+
+
+            }
+
+            .flexleft {
+                width: 90%;
+                height: 200px;
+
+            }
+
+            .flexright {
+                width: 80%;
+                height: auto;
+
+            }
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="navbar">
+        <div class="navleft">
+            Infinite Loop
+        </div>
+        <div class="navright">
+            <a href="#home">Home</a>
+            <a href="#what">What We Do</a>
+            <a href="#test">Testimonials</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="background1" id="home">
+
+
+        <center><span>Infinite Loop</span></center>
+        <p>Bootstrap 4.0 Parallax Theme</p>
+        <p>Free HTML Template by TOOPLATE</p>
+
+        <div class="imgend">
+            <span class="fa-solid fa-arrow-down arrow"></span>
+        </div>
+    </div>
+
+    <div class="background2" id="what">
+       <div class="gallery">
+        <h1 style="font-size: 50px;">What We Do</h1>
+       </div>
+        <p style="line-height: 1.5; font-size: 22px; justify-content: center;"> This is Infinite Loop,free Bootstrap 4.0 HTML template with a parallax effect.This layout is What you can
+            modify and use for your Websites. <br>
+            Please spread a Word to your friends about our Website.Thank you for supporting us. If you have any
+            question, you can contact us or chat <br>
+            With us on our <span>Tooplate Facebook page.</p>
+
+
+
+        <div class="flex-container">
+            <div class="flex-item-left">
+                <h2 style="margin-right: 140px;"> <img src="./images/market.jpeg" height="50px" width="50px" style="margin-left: 20px;"> &nbsp;&nbsp;Market Analysis</h2>
+
+                <p  style="line-height: 1.5; font-size: 22px; justify-content: center; margin-left:100px;">Praesent sed pharetra lorem, blandit convallis mi.<br>
+                    Aenean ornare elit ac metus lacinia, sed iaculis nibh<br>
+                    semper.pellentesque est urna.</p>
+            </div>
+
+
+            <div class="flex-item-right">
+                <h2 style="margin-right: 140px;"><img src="./images/message.jpeg" height="50px" width="50px"> &nbsp;&nbsp; Fast Support</h2>
+
+                <p style="line-height: 1.5; font-size: 22px; justify-content: center; margin-left: 100px;">Credit goes to Pexels.com website for all images used<br> in this template. Cras condimentum mi et
+                    sapien dignissim <br>luctus.</p>
+            </div>
+        </div>
+
+        <div class="flex-container2">
+            <div class="flex-item-left">
+                <h2 style="margin-right: 140px;"> <img src="./images/finger.avif" height="60px" width="50px" style="border-radius: 100px;"> &nbsp;&nbsp;Top Security</h2>
+
+                <p style="line-height: 1.5; font-size: 22px; justify-content: center; margin-left: 100px;">You can use this template for your commercial websites. <br> Suspendisse sollicitudin libero et
+                    tincidunt scelerisque. <br> Ut luctus in quam id congue. Proin vitae convallis eros.</p>
+
+                <button>Learn More</button>
+
+            </div>
+
+
+            <div class="flex-item-right">
+                <h2 style="margin-right: 140px;"> <img src="./images/user.jpeg" height="60px" width="50px" style="border-radius: 100px;"> &nbsp;&nbsp; Social Work</h2>
+
+                <p style="line-height: 1.5; font-size: 22px; justify-content: center; margin-left: 100px;">You can change Font Awesome icons by either fas or far <br>
+                    in the HTML codes. For Examples: <br>
+                    &lt; class="fas fa-users"&gt; &lt;i class="far fa-chart-bar"&gt; </p>
+
+                <button>Details</button>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="background3" id="test">
+        <center>
+            <h2>Testimonials</h2>
+        </center>
+        <center>
+            <p>
+                Nulla dictum sem non eros euismod. eu placerat tortor lobortis.Suspendisse id velit eu libero<br>
+                pellentesque interdum.Etiam quis congue eros.
+            </p>
+        </center>
+
+
+
+        <div class="card-container">
+            <div class="card">
+                <center> <img src="./images/testimonial-img-01.jpg" alt=""></center>
+                <div class="card-content">
+
+                    <p>This background images includes a semi-transparent overlay layer. This section also has a
+                        parallax image effect.</p>
+                    <p style="float: left;"><i>Catherin Win (Designer)</i></p>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <center> <img src="./images/testimonial-img-02.jpg" alt=""></center>
+                <div class="card-content">
+                    <p>Testinomial section comes with carausel items. You can use infinite Loop HTML CSS Template for
+                        your websites.</p>
+                    <p style="float: left;"><i>Dual Rocker (CEO)</i></p>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <center> <img src="./images/testimonial-img-03.jpg" alt=""></center>
+                <div class="card-content">
+                    <p>Nulla finibus ligula nex tortor convallis tincidunt. Interdum et malesuada fames ac ante ipsum
+                        primis in faubicius.</p>
+                    <p style="float: left;"> <i>Sandra soft(Marketing)</i></p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <center><button style="background-color: gray;"></button>
+            <button style="background-color: gray;"></button>
+            <button></button>
+        </center>
+    </div>
+
+
+    <div class="background4" id="gallery">
+        <div class="gallery">
+            <center>
+                <p>Gallery</p>
+            </center>
+        </div>
+        <div class="para">
+            <p>Praesent sed pharetra lorem, blandit convallis mi. Aenean ornare elit ac metus lacinia, sed iaculis
+                ,<br>nibh semper. Pellentesque est urna, lobortis eu arcu a, aliquet tristique urna.</p>
+
+        </div>
+
+
+        <div class="flex-container4">
+
+            <div><img src="./images/gallery-img-01.jpg" alt=""></div>
+            <div><img src="./images/gallery-img-02.jpg" alt=""></div>
+            <div><img src="./images/gallery-img-03.jpg" alt=""></div>
+            <div><img src="./images/gallery-img-04.jpg" alt=""></div>
+            <div><img src="./images/gallery-img-05.jpg" alt=""></div>
+        </div>
+
+
+        <center><button style="background-color: gray;"></button>
+            <button style="background-color: gray;"></button>
+            <button></button>
+        </center>
+
+    </div>
+
+
+    <div class="background5" id="contact">
+
+        <center>
+            <div class="gallery" style="color: white;">
+                <p>Contact us</p>
+            </div>
+
+            <div class="para">
+                <p style="color: white;">Proin enim orci, tincidunt quis suscipit in, placerat nec est. Vestibulum
+                    posuere faucibus posuere. Quisque aliquam <br>velit eget leo blandit egestas. Nulla id posuere
+                    felis, quis tristique nulla.</p>
+
+            </div>
+        </center>
+        <div class="flex-container5">
+            <div class="flexleft">
+                <form action="">
+
+                    <input type="text" name="" id="" placeholder="name">
+
+                    <input type="email" name="" id="" placeholder="email">
+
+                    <div class="message">
+                        <input type="text" name="" id="" placeholder="message">
+                    </div>
+
+                    <button>submit</button>
+
+
+                </form>
+
+
+            </div>
+            <div class="flexright">
+
+                <div class="contactparenttwo">
+                    <div class="fa-regular fa-comment taggi" style="text-align: start;">
+                        <span>Chat Online</span>
+                    </div><br>
+                    <div class="fa-regular fa-envelope baggi" style="text-align: start;">
+                        <span class="mailcompany">mail@gmail.com</span>
+                    </div><br>
+                    <div class="fa-solid fa-location-dot laggi" style="text-align: start;">
+                        <span>Our location</span>
+                    </div><br>
+                    <div class="fa-solid fa-phone-flip phoggi" style="text-align: start;">
+                        <span>2<sub>55</sub>-66<sub>2</sub>-55<sup>66</sup></span>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+       
+    </div>
+
+    <div class="background6">
+        <footer>
+            <center>
+                <p>Copyright © 2045 Company Name. Designed by TOOPLATE</p>
+            </center>
+        </footer>
+
+    </div>
+
+    
+
+
+
+
+
+
+</body>
+
+</html>
